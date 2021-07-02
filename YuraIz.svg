@@ -1,0 +1,32 @@
+<svg fill="none" viewBox="0 0 1200 400" width="1200" height="400" xmlns="http://www.w3.org/2000/svg">
+
+    <style>
+            .YI {
+                animation: rainbow 1s;
+                stroke:#d83b01;
+                stroke-width:3px;
+                font-size: 15rem;
+                font-family: "Arial", sans-serif;
+                text-shadow:
+                    5px 5px 0px #ea8200,
+                    10px 10px 0px #34a117,
+                    15px 15px 0px #008575,
+                    20px 20px 0px #0078d4,
+                    25px 25px 0px #8661c5;
+            }
+
+            @keyframes rainbow {
+                0% {
+                    font-variation-settings: "wght" 100, "ital" 0;
+                    text-shadow: none;
+                }
+                70% {
+                    font-variation-settings: "wght" 100, "ital" 0;
+                    text-shadow: none;
+                }
+            }
+
+    </style>
+    
+    <text x="200" y="200" font-style="italic" class="YI">YuraIz</text>
+</svg>
