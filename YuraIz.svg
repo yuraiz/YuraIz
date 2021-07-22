@@ -1,32 +1,59 @@
-<svg fill="none" viewBox="0 0 1200 400" width="1200" height="400" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
 
     <style>
-            .YI {
-                animation: rainbow 1s;
-                stroke:#d83b01;
-                stroke-width:3px;
-                font-size: 15rem;
-                font-family: "Arial", sans-serif;
-                text-shadow:
-                    5px 5px 0px #ea8200,
-                    10px 10px 0px #34a117,
-                    15px 15px 0px #008575,
-                    20px 20px 0px #0078d4,
-                    25px 25px 0px #8661c5;
+        .YI {
+            animation: rainbow 1s;
+            stroke: #d83b01;
+            stroke-width: 3px;
+            font-size: 15rem;
+            font-family: "Arial", sans-serif;
+            fill: transparent;
+            text-shadow:
+                5pt 5pt 0pt #ea8200,
+                10pt 10pt 0pt #34a117,
+                15pt 15pt 0pt #008575,
+                20pt 20pt 0pt #0078d4,
+                25pt 25pt 0pt #8661c5;
+        }
+
+        @keyframes rainbow {
+            0% {
+                stroke-width: 0px;
+                fill: #ea8200;
+                text-shadow: none;
             }
 
-            @keyframes rainbow {
-                0% {
-                    font-variation-settings: "wght" 100, "ital" 0;
-                    text-shadow: none;
-                }
-                70% {
-                    font-variation-settings: "wght" 100, "ital" 0;
-                    text-shadow: none;
-                }
+            10% {
+                stroke-width: 0px;
+                fill: #008575;
+                text-shadow: none;
             }
 
+            20% {
+                stroke-width: 0px;
+                fill: #0078d4;
+                text-shadow: none;
+            }
+
+            30% {
+                stroke-width: 0px;
+                fill: #34a117,
+                    text-shadow: none;
+            }
+
+            40% {
+                stroke: #8661c5;
+                stroke-width: 3px;
+                fill: #8661c5;
+                text-shadow: none;
+            }
+
+            70% {
+                stroke-width: 3px;
+                text-shadow: none;
+            }
+        }
     </style>
-    
-    <text x="200" y="200" font-style="italic" class="YI">YuraIz</text>
+
+    <text x="10" y="180" font-style="italic" class="YI">YuraIz</text>
 </svg>
