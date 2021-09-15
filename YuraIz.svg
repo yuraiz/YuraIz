@@ -1,59 +1,279 @@
-<svg fill="none" viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 990 242">
 
     <style>
-        .YI {
-            animation: rainbow 1s;
-            stroke: #d83b01;
-            stroke-width: 3px;
-            font-size: 15rem;
-            font-family: "Arial", sans-serif;
-            fill: transparent;
-            text-shadow:
-                5pt 5pt 0pt #ea8200,
-                10pt 10pt 0pt #34a117,
-                15pt 15pt 0pt #008575,
-                20pt 20pt 0pt #0078d4,
-                25pt 25pt 0pt #8661c5;
+        .blurry {
+            filter: blur(20px);
         }
 
-        @keyframes rainbow {
+        .sparcle1 {
+            animation: MoveUpDown 2s ease-out infinite;
+        }
+
+        .sparcle2 {
+            animation: MoveUpDown 3s ease-out infinite;
+        }
+
+        .sparcle3 {
+            animation: MoveUpDown 4s ease-out infinite;
+        }
+
+        .rainbow {
+            animation: Rainbow 10s;
+        }
+
+        @keyframes Rainbow {
+            0%,
+            5% {
+                fill: red;
+            }
+
+            10%,
+            15% {
+                fill: orange;
+            }
+
+            20%,
+            25% {
+                fill: yellow;
+            }
+
+            30%,
+            35% {
+                fill: lightgreen;
+            }
+
+            40%,
+            45% {
+                fill: blue;
+            }
+
+            50%,
+            55% {
+                fill: indigo;
+            }
+
+            60%,
+            65% {
+                fill: blueviolet;
+            }
+        }
+
+        @keyframes MoveUpDown {
             0% {
-                stroke-width: 0px;
-                fill: #ea8200;
-                text-shadow: none;
-            }
-
-            10% {
-                stroke-width: 0px;
-                fill: #008575;
-                text-shadow: none;
-            }
-
-            20% {
-                stroke-width: 0px;
-                fill: #0078d4;
-                text-shadow: none;
-            }
-
-            30% {
-                stroke-width: 0px;
-                fill: #34a117,
-                    text-shadow: none;
-            }
-
-            40% {
-                stroke: #8661c5;
-                stroke-width: 3px;
-                fill: #8661c5;
-                text-shadow: none;
+                transform: translateY(0);
+                fill: red;
             }
 
             70% {
-                stroke-width: 3px;
-                text-shadow: none;
+                opacity: 70%;
+                fill: yellow;
+            }
+
+            100% {
+                transform: translateY(-180px);
+                fill: blue;
+                opacity: 0;
             }
         }
     </style>
 
-    <text x="10" y="180" font-style="italic" class="YI">YuraIz</text>
+    <mask id="yuraiz">
+        <path class="blurry" fill="white"
+            d="m191 62 3 1v4l-80 104-9 64c0 2-2 4-4 4H76c-3 0-4-2-4-4l9-65L31 66v-3l3-1h29c2 0 4 1 4 3l35 72 56-73 5-2h28Zm134 57-13 88c-1 6 1 9 5 9 3 0 4 2 4 5l-2 11c-1 3-2 5-5 6-3 2-7 2-11 2-8 0-14-2-17-6s-4-10-4-17h-2c-3 7-8 13-15 17-7 5-15 7-24 7-14 0-25-5-32-14-8-10-10-23-8-40l10-68c0-3 2-4 4-4h24c3 0 4 1 4 4l-10 65c-1 9 0 16 5 21 4 4 9 7 15 7 12 0 22-7 30-21l10-73c0-2 2-3 4-3h24c3 0 4 1 4 4Zm116-7c14 0 25 5 33 14 7 10 10 23 7 39 0 3-2 4-5 5l-23 2h-3l-1-4c2-9 0-16-4-20s-9-6-17-6l-14 2-11 7-6 8-4 7-10 69c0 2-2 4-4 4h-24c-3 0-4-2-3-4l16-116c0-3 2-4 4-4h23l2 1c1 1 2 3 1 4l-1 15h3c3-7 9-13 15-17 7-4 16-6 26-6Zm197 7-12 88c-1 6 0 9 5 9 3 0 4 2 3 5l-2 11c0 3-2 5-5 6-3 2-6 2-11 2s-9-1-12-5c-3-3-4-8-4-14h-2c-4 6-9 11-15 15-7 4-15 6-24 6-16 0-29-5-39-15a58 58 0 0 1-15-43 79 79 0 0 1 19-52 63 63 0 0 1 46-20c8 0 16 2 22 5 6 4 11 8 14 14h2l4-13c0-2 2-3 4-3h19l3 1v3Zm-73 94c11 0 19-4 26-12 6-8 10-18 10-28 0-11-3-18-9-24-5-5-12-7-21-7-10 0-18 3-25 11-7 7-10 17-10 29 0 10 3 18 8 23s12 8 21 8ZM815 88c-1 2-2 3-4 3h-44l-16 118h43c2 0 4 2 3 4l-3 22c0 2-2 4-4 4H671c-3 0-4-2-4-4l3-22c1-2 2-4 4-4h44l16-118h-43c-2 0-4-1-3-4l3-21c0-3 2-4 4-4h119c3 0 4 1 4 4l-3 22Zm144 32-3 19-2 5-80 69h71c3 0 4 1 3 4l-2 18c-1 2-2 4-4 4H836l-2-2c-1-1-2-2-1-3l2-20 2-4 81-69h-71c-3 0-4-1-4-4l3-18c0-3 1-4 4-4h105l3 1 1 4Z" />
+    </mask>
+
+
+    <g mask="url(#yuraiz)" class="blurry">
+
+        <circle class="sparcle1" cx="5" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="25" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="45" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="55" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="75" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="85" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="105" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="125" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="135" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="155" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="175" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="195" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="205" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="225" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="245" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="265" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="275" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="295" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="325" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="335" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="355" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="375" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="385" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="405" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="425" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="445" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="455" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="475" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="485" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="505" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="515" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="535" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="555" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="565" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="585" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="605" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="615" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="635" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="645" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="665" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="675" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="695" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="715" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="725" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="755" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="765" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="785" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="805" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="815" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="835" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="855" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="865" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="885" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="915" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="925" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="945" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="955" cy="250" r="15" fill="red" />
+        <circle class="sparcle1" cx="975" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="5" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="25" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="45" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="55" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="75" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="85" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="105" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="125" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="135" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="165" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="175" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="195" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="215" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="235" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="255" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="265" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="285" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="315" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="325" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="345" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="355" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="375" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="385" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="405" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="425" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="435" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="455" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="465" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="485" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="505" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="515" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="535" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="545" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="565" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="575" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="595" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="605" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="625" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="635" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="655" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="665" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="685" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="705" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="715" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="735" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="745" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="765" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="775" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="795" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="805" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="825" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="835" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="855" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="865" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="885" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="905" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="915" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="935" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="945" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="965" cy="250" r="15" fill="red" />
+        <circle class="sparcle2" cx="985" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="15" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="25" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="35" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="55" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="65" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="85" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="95" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="115" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="125" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="145" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="155" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="175" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="185" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="205" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="215" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="235" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="245" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="265" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="275" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="295" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="305" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="315" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="335" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="345" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="365" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="375" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="395" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="405" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="415" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="435" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="445" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="465" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="485" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="495" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="515" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="525" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="545" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="565" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="575" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="595" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="605" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="625" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="635" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="655" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="675" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="685" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="705" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="715" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="735" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="745" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="765" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="775" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="795" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="805" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="825" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="835" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="845" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="865" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="875" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="895" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="905" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="925" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="945" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="965" cy="250" r="15" fill="red" />
+        <circle class="sparcle3" cx="975" cy="250" r="15" fill="red" />
+    </g>
+
+
+    <path class="rainbow" fill="orangered"
+        d="m191 62 3 1v4l-80 104-9 64c0 2-2 4-4 4H76c-3 0-4-2-4-4l9-65L31 66v-3l3-1h29c2 0 4 1 4 3l35 72 56-73 5-2h28Zm134 57-13 88c-1 6 1 9 5 9 3 0 4 2 4 5l-2 11c-1 3-2 5-5 6-3 2-7 2-11 2-8 0-14-2-17-6s-4-10-4-17h-2c-3 7-8 13-15 17-7 5-15 7-24 7-14 0-25-5-32-14-8-10-10-23-8-40l10-68c0-3 2-4 4-4h24c3 0 4 1 4 4l-10 65c-1 9 0 16 5 21 4 4 9 7 15 7 12 0 22-7 30-21l10-73c0-2 2-3 4-3h24c3 0 4 1 4 4Zm116-7c14 0 25 5 33 14 7 10 10 23 7 39 0 3-2 4-5 5l-23 2h-3l-1-4c2-9 0-16-4-20s-9-6-17-6l-14 2-11 7-6 8-4 7-10 69c0 2-2 4-4 4h-24c-3 0-4-2-3-4l16-116c0-3 2-4 4-4h23l2 1c1 1 2 3 1 4l-1 15h3c3-7 9-13 15-17 7-4 16-6 26-6Zm197 7-12 88c-1 6 0 9 5 9 3 0 4 2 3 5l-2 11c0 3-2 5-5 6-3 2-6 2-11 2s-9-1-12-5c-3-3-4-8-4-14h-2c-4 6-9 11-15 15-7 4-15 6-24 6-16 0-29-5-39-15a58 58 0 0 1-15-43 79 79 0 0 1 19-52 63 63 0 0 1 46-20c8 0 16 2 22 5 6 4 11 8 14 14h2l4-13c0-2 2-3 4-3h19l3 1v3Zm-73 94c11 0 19-4 26-12 6-8 10-18 10-28 0-11-3-18-9-24-5-5-12-7-21-7-10 0-18 3-25 11-7 7-10 17-10 29 0 10 3 18 8 23s12 8 21 8ZM815 88c-1 2-2 3-4 3h-44l-16 118h43c2 0 4 2 3 4l-3 22c0 2-2 4-4 4H671c-3 0-4-2-4-4l3-22c1-2 2-4 4-4h44l16-118h-43c-2 0-4-1-3-4l3-21c0-3 2-4 4-4h119c3 0 4 1 4 4l-3 22Zm144 32-3 19-2 5-80 69h71c3 0 4 1 3 4l-2 18c-1 2-2 4-4 4H836l-2-2c-1-1-2-2-1-3l2-20 2-4 81-69h-71c-3 0-4-1-4-4l3-18c0-3 1-4 4-4h105l3 1 1 4Z" />
+
+
 </svg>
