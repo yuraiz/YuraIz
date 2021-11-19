@@ -1,279 +1,45 @@
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 990 242">
-
-    <style>
-        .blurry {
-            filter: blur(20px);
-        }
-
-        .sparcle1 {
-            animation: MoveUpDown 2s ease-out infinite;
-        }
-
-        .sparcle2 {
-            animation: MoveUpDown 3s ease-out infinite;
-        }
-
-        .sparcle3 {
-            animation: MoveUpDown 4s ease-out infinite;
-        }
-
-        .rainbow {
-            animation: Rainbow 10s;
-        }
-
-        @keyframes Rainbow {
-            0%,
-            5% {
-                fill: red;
-            }
-
-            10%,
-            15% {
-                fill: orange;
-            }
-
-            20%,
-            25% {
-                fill: yellow;
-            }
-
-            30%,
-            35% {
-                fill: lightgreen;
-            }
-
-            40%,
-            45% {
-                fill: blue;
-            }
-
-            50%,
-            55% {
-                fill: indigo;
-            }
-
-            60%,
-            65% {
-                fill: blueviolet;
-            }
-        }
-
-        @keyframes MoveUpDown {
-            0% {
-                transform: translateY(0);
-                fill: red;
-            }
-
-            70% {
-                opacity: 70%;
-                fill: yellow;
-            }
-
-            100% {
-                transform: translateY(-180px);
-                fill: blue;
-                opacity: 0;
-            }
-        }
-    </style>
-
-    <mask id="yuraiz">
-        <path class="blurry" fill="white"
-            d="m191 62 3 1v4l-80 104-9 64c0 2-2 4-4 4H76c-3 0-4-2-4-4l9-65L31 66v-3l3-1h29c2 0 4 1 4 3l35 72 56-73 5-2h28Zm134 57-13 88c-1 6 1 9 5 9 3 0 4 2 4 5l-2 11c-1 3-2 5-5 6-3 2-7 2-11 2-8 0-14-2-17-6s-4-10-4-17h-2c-3 7-8 13-15 17-7 5-15 7-24 7-14 0-25-5-32-14-8-10-10-23-8-40l10-68c0-3 2-4 4-4h24c3 0 4 1 4 4l-10 65c-1 9 0 16 5 21 4 4 9 7 15 7 12 0 22-7 30-21l10-73c0-2 2-3 4-3h24c3 0 4 1 4 4Zm116-7c14 0 25 5 33 14 7 10 10 23 7 39 0 3-2 4-5 5l-23 2h-3l-1-4c2-9 0-16-4-20s-9-6-17-6l-14 2-11 7-6 8-4 7-10 69c0 2-2 4-4 4h-24c-3 0-4-2-3-4l16-116c0-3 2-4 4-4h23l2 1c1 1 2 3 1 4l-1 15h3c3-7 9-13 15-17 7-4 16-6 26-6Zm197 7-12 88c-1 6 0 9 5 9 3 0 4 2 3 5l-2 11c0 3-2 5-5 6-3 2-6 2-11 2s-9-1-12-5c-3-3-4-8-4-14h-2c-4 6-9 11-15 15-7 4-15 6-24 6-16 0-29-5-39-15a58 58 0 0 1-15-43 79 79 0 0 1 19-52 63 63 0 0 1 46-20c8 0 16 2 22 5 6 4 11 8 14 14h2l4-13c0-2 2-3 4-3h19l3 1v3Zm-73 94c11 0 19-4 26-12 6-8 10-18 10-28 0-11-3-18-9-24-5-5-12-7-21-7-10 0-18 3-25 11-7 7-10 17-10 29 0 10 3 18 8 23s12 8 21 8ZM815 88c-1 2-2 3-4 3h-44l-16 118h43c2 0 4 2 3 4l-3 22c0 2-2 4-4 4H671c-3 0-4-2-4-4l3-22c1-2 2-4 4-4h44l16-118h-43c-2 0-4-1-3-4l3-21c0-3 2-4 4-4h119c3 0 4 1 4 4l-3 22Zm144 32-3 19-2 5-80 69h71c3 0 4 1 3 4l-2 18c-1 2-2 4-4 4H836l-2-2c-1-1-2-2-1-3l2-20 2-4 81-69h-71c-3 0-4-1-4-4l3-18c0-3 1-4 4-4h105l3 1 1 4Z" />
-    </mask>
-
-
-    <g mask="url(#yuraiz)" class="blurry">
-
-        <circle class="sparcle1" cx="5" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="25" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="45" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="55" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="75" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="85" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="105" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="125" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="135" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="155" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="175" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="195" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="205" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="225" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="245" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="265" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="275" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="295" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="325" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="335" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="355" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="375" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="385" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="405" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="425" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="445" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="455" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="475" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="485" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="505" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="515" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="535" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="555" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="565" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="585" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="605" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="615" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="635" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="645" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="665" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="675" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="695" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="715" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="725" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="755" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="765" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="785" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="805" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="815" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="835" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="855" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="865" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="885" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="915" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="925" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="945" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="955" cy="250" r="15" fill="red" />
-        <circle class="sparcle1" cx="975" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="5" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="25" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="45" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="55" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="75" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="85" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="105" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="125" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="135" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="165" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="175" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="195" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="215" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="235" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="255" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="265" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="285" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="315" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="325" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="345" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="355" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="375" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="385" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="405" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="425" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="435" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="455" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="465" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="485" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="505" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="515" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="535" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="545" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="565" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="575" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="595" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="605" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="625" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="635" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="655" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="665" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="685" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="705" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="715" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="735" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="745" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="765" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="775" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="795" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="805" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="825" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="835" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="855" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="865" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="885" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="905" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="915" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="935" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="945" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="965" cy="250" r="15" fill="red" />
-        <circle class="sparcle2" cx="985" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="15" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="25" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="35" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="55" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="65" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="85" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="95" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="115" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="125" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="145" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="155" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="175" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="185" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="205" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="215" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="235" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="245" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="265" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="275" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="295" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="305" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="315" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="335" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="345" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="365" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="375" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="395" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="405" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="415" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="435" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="445" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="465" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="485" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="495" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="515" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="525" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="545" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="565" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="575" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="595" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="605" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="625" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="635" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="655" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="675" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="685" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="705" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="715" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="735" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="745" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="765" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="775" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="795" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="805" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="825" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="835" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="845" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="865" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="875" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="895" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="905" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="925" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="945" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="965" cy="250" r="15" fill="red" />
-        <circle class="sparcle3" cx="975" cy="250" r="15" fill="red" />
-    </g>
-
-
-    <path class="rainbow" fill="orangered"
-        d="m191 62 3 1v4l-80 104-9 64c0 2-2 4-4 4H76c-3 0-4-2-4-4l9-65L31 66v-3l3-1h29c2 0 4 1 4 3l35 72 56-73 5-2h28Zm134 57-13 88c-1 6 1 9 5 9 3 0 4 2 4 5l-2 11c-1 3-2 5-5 6-3 2-7 2-11 2-8 0-14-2-17-6s-4-10-4-17h-2c-3 7-8 13-15 17-7 5-15 7-24 7-14 0-25-5-32-14-8-10-10-23-8-40l10-68c0-3 2-4 4-4h24c3 0 4 1 4 4l-10 65c-1 9 0 16 5 21 4 4 9 7 15 7 12 0 22-7 30-21l10-73c0-2 2-3 4-3h24c3 0 4 1 4 4Zm116-7c14 0 25 5 33 14 7 10 10 23 7 39 0 3-2 4-5 5l-23 2h-3l-1-4c2-9 0-16-4-20s-9-6-17-6l-14 2-11 7-6 8-4 7-10 69c0 2-2 4-4 4h-24c-3 0-4-2-3-4l16-116c0-3 2-4 4-4h23l2 1c1 1 2 3 1 4l-1 15h3c3-7 9-13 15-17 7-4 16-6 26-6Zm197 7-12 88c-1 6 0 9 5 9 3 0 4 2 3 5l-2 11c0 3-2 5-5 6-3 2-6 2-11 2s-9-1-12-5c-3-3-4-8-4-14h-2c-4 6-9 11-15 15-7 4-15 6-24 6-16 0-29-5-39-15a58 58 0 0 1-15-43 79 79 0 0 1 19-52 63 63 0 0 1 46-20c8 0 16 2 22 5 6 4 11 8 14 14h2l4-13c0-2 2-3 4-3h19l3 1v3Zm-73 94c11 0 19-4 26-12 6-8 10-18 10-28 0-11-3-18-9-24-5-5-12-7-21-7-10 0-18 3-25 11-7 7-10 17-10 29 0 10 3 18 8 23s12 8 21 8ZM815 88c-1 2-2 3-4 3h-44l-16 118h43c2 0 4 2 3 4l-3 22c0 2-2 4-4 4H671c-3 0-4-2-4-4l3-22c1-2 2-4 4-4h44l16-118h-43c-2 0-4-1-3-4l3-21c0-3 2-4 4-4h119c3 0 4 1 4 4l-3 22Zm144 32-3 19-2 5-80 69h71c3 0 4 1 3 4l-2 18c-1 2-2 4-4 4H836l-2-2c-1-1-2-2-1-3l2-20 2-4 81-69h-71c-3 0-4-1-4-4l3-18c0-3 1-4 4-4h105l3 1 1 4Z" />
-
-
+  <style>
+    @keyframes blink{70%{fill:transparent}}.bokeh{filter:blur(10px)}.bokeh circle{animation-duration:3s;animation-timing-function:linear;animation-iteration-count:infinite;animation-name:blink}.bokeh circle:nth-child(1){animation-duration:3.5s}.bokeh circle:nth-child(2){animation-duration:3.3s}.bokeh circle:nth-child(3){animation-duration:2.7s}.bokeh circle:nth-child(4){animation-duration:4.2s}.bokeh circle:nth-child(5){animation-duration:3.8s}.bokeh circle:nth-child(6){animation-duration:3.9s}.bokeh circle:nth-child(7){animation-duration:3.4s}.bokeh circle:nth-child(8){animation-duration:3.2s}.bokeh circle:nth-child(9){animation-duration:4.1s}.bokeh circle:nth-child(10){animation-duration:3.7s}.bokeh circle:nth-child(11){animation-duration:3.6s}.bokeh circle:nth-child(12){animation-duration:3.4s}.bokeh circle:nth-child(13){animation-duration:3.5s}.bokeh circle:nth-child(14){animation-duration:3.3s}.bokeh circle:nth-child(15){animation-duration:2.7s}.bokeh circle:nth-child(16){animation-duration:4.2s}.bokeh circle:nth-child(17){animation-duration:3.8s}.bokeh circle:nth-child(18){animation-duration:3.9s}.bokeh circle:nth-child(19){animation-duration:3.4s}.bokeh circle:nth-child(20){animation-duration:3.2s}.bokeh circle:nth-child(21){animation-duration:4.1s}.bokeh circle:nth-child(22){animation-duration:3.7s}.bokeh circle:nth-child(23){animation-duration:3.6s}.bokeh circle:nth-child(24){animation-duration:3.4s}.bokeh circle:nth-child(25){animation-duration:3.6s}.bokeh circle:nth-child(26){animation-duration:3.4s}.bokeh circle:nth-child(27){animation-duration:3.5s}.bokeh circle:nth-child(29){animation-duration:3.3s}.bokeh circle:nth-child(30){animation-duration:2.7s}
+  </style>
+  <mask id="yuraiz">
+    <path fill="#fff" d="M440.99 112.27c14.3 0 25.18 4.68 32.66 14.04 7.47 9.37 9.94 22.3 7.4 38.81-.26 2.55-1.98 4.03-5.19 4.44l-22.43 2.7c-1.47.17-2.62-.07-3.44-.73-.75-.74-1-1.9-.75-3.45 1.4-9.37.09-16.1-3.94-20.2-3.94-4.11-9.65-6.17-17.13-6.17-5.42 0-10.31.86-14.66 2.59-4.36 1.72-7.9 3.98-10.6 6.78a52.83 52.83 0 0 0-6.29 7.63 35.7 35.7 0 0 0-3.7 7.27l-9.85 69.12c-.33 2.38-1.69 3.57-4.07 3.57h-24.03c-2.71 0-3.86-1.35-3.45-4.06l16.63-116.06c.33-2.38 1.69-3.57 4.07-3.57h22.43c1.07 0 1.97.49 2.71 1.48.82.98 1.2 2.05 1.11 3.2l-.99 14.9v.13h2.35a39.76 39.76 0 0 1 15.52-16.39c6.9-4.02 15.45-6.03 25.64-6.03Zm517.97 7.39-2.7 19.59c-.34 2.22-.95 3.74-1.86 4.56l-80.6 68.87h70.87c2.87 0 4.06 1.35 3.57 4.06l-2.59 18.36c-.24 2.38-1.6 3.57-4.06 3.57H836.46c-1.07 0-2.05-.49-2.96-1.47a3.96 3.96 0 0 1-.98-3.2l2.83-19.6c.33-2.22.9-3.7 1.73-4.43l80.47-69h-70.73c-2.88 0-4.07-1.31-3.58-3.94l2.59-18.48c.25-2.38 1.56-3.57 3.94-3.57H954.9c1.06 0 2.05.49 2.95 1.48a3.8 3.8 0 0 1 1.11 3.2Zm-634.31-.62-12.7 87.97c-.9 6.08.83 9.03 5.18 8.87 2.88 0 4.07 1.69 3.58 5.05l-1.85 11.34c-.41 2.46-2.1 4.43-5.06 5.91-2.87 1.48-6.57 2.22-11.09 2.22-7.8 0-13.35-2.1-16.63-6.28-3.2-4.2-4.52-9.74-3.95-16.64h-2.1c-2.95 6.98-7.88 12.65-14.78 17-6.9 4.36-15.08 6.53-24.53 6.53-13.63 0-24.23-4.8-31.8-14.41-7.55-9.61-10.14-22.67-7.75-39.18l9.73-68.87c.25-2.38 1.6-3.57 4.07-3.57H239c2.71 0 3.9 1.35 3.57 4.06l-9.12 64.8c-1.31 9.62.04 16.64 4.07 21.08 4.03 4.43 9.32 6.65 15.9 6.65 12 0 21.73-6.94 29.2-20.82l10.48-72.7c.25-2.05 1.69-3.07 4.31-3.07h23.79c2.55 0 3.7 1.35 3.45 4.06Zm490.12-31.3c-.33 2.4-1.68 3.58-4.06 3.58h-43.38l-16.64 118.03h43c2.72 0 3.87 1.36 3.46 4.07l-3.08 21.68c-.33 2.38-1.65 3.57-3.95 3.57H670.58c-2.7 0-3.86-1.35-3.45-4.06l3.08-21.69c.33-2.38 1.69-3.57 4.07-3.57h43.5L734.3 91.32h-43.01c-2.71 0-3.87-1.35-3.45-4.06l3.08-21.69c.33-2.38 1.64-3.57 3.94-3.57H814.4c2.71 0 3.86 1.36 3.45 4.07l-3.08 21.68ZM191.43 62.01c1.56 0 2.55.5 2.96 1.48.49.9.28 1.97-.62 3.2l-79.49 104.1-9.12 64.32c-.33 2.38-1.68 3.57-4.06 3.57H75.58c-2.7 0-3.82-1.35-3.32-4.06l9.12-65.05L31.46 66.44c-.57-1.32-.61-2.39-.12-3.2.5-.83 1.44-1.24 2.84-1.24h28.71c2.14 0 3.62.94 4.44 2.83l34.5 72.57 56.08-73.06a5.95 5.95 0 0 1 4.68-2.34h28.84Zm446.86 57.04-12.69 87.97c-.82 6.08.86 9.03 5.05 8.87 2.96 0 4.2 1.69 3.7 5.05l-1.97 11.34c-.41 2.46-2.1 4.43-5.05 5.91-2.88 1.48-6.54 2.22-10.97 2.22-5.43 0-9.53-1.73-12.33-5.18-2.79-3.53-4.27-8.13-4.43-13.8h-1.85c-3.37 5.84-8.42 10.72-15.16 14.67-6.66 3.94-14.58 5.91-23.79 5.91-15.52 0-28.34-5.13-38.45-15.4-10.1-10.35-15.15-24.56-15.15-42.63a79.46 79.46 0 0 1 5.17-28.83c3.45-8.95 8.05-16.55 13.8-22.8a63.27 63.27 0 0 1 20.59-14.65 59.63 59.63 0 0 1 24.89-5.42c8.54 0 15.94 1.68 22.18 5.05 6.33 3.37 10.89 7.76 13.68 13.18h2.1l3.94-12.44c.58-2.06 2.01-3.08 4.31-3.08h18.98c1.24 0 2.14.37 2.71 1.1.66.75.9 1.73.74 2.96Zm-73.2 93.51c10.6 0 19.18-3.98 25.76-11.95 6.57-7.96 9.86-17.33 9.86-28.09 0-10.26-2.8-17.94-8.38-23.04-5.5-5.17-12.45-7.76-20.83-7.76-10.1 0-18.57 3.66-25.39 10.97-6.82 7.23-10.23 16.96-10.23 29.2 0 10.02 2.71 17.66 8.14 22.91 5.42 5.18 12.44 7.76 21.07 7.76Z"/>
+  </mask>
+  <path fill="#7C83FD" d="M440.99 112.27c14.3 0 25.18 4.68 32.66 14.04 7.47 9.37 9.94 22.3 7.4 38.81-.26 2.55-1.98 4.03-5.19 4.44l-22.43 2.7c-1.47.17-2.62-.07-3.44-.73-.75-.74-1-1.9-.75-3.45 1.4-9.37.09-16.1-3.94-20.2-3.94-4.11-9.65-6.17-17.13-6.17-5.42 0-10.31.86-14.66 2.59-4.36 1.72-7.9 3.98-10.6 6.78a52.83 52.83 0 0 0-6.29 7.63 35.7 35.7 0 0 0-3.7 7.27l-9.85 69.12c-.33 2.38-1.69 3.57-4.07 3.57h-24.03c-2.71 0-3.86-1.35-3.45-4.06l16.63-116.06c.33-2.38 1.69-3.57 4.07-3.57h22.43c1.07 0 1.97.49 2.71 1.48.82.98 1.2 2.05 1.11 3.2l-.99 14.9v.13h2.35a39.76 39.76 0 0 1 15.52-16.39c6.9-4.02 15.45-6.03 25.64-6.03ZM958.96 119.66l-2.7 19.59c-.34 2.22-.95 3.74-1.86 4.56l-80.6 68.87h70.87c2.87 0 4.06 1.35 3.57 4.06l-2.59 18.36c-.24 2.38-1.6 3.57-4.06 3.57H836.46c-1.07 0-2.05-.49-2.96-1.47a3.96 3.96 0 0 1-.98-3.2l2.83-19.6c.33-2.22.9-3.7 1.73-4.43l80.47-69h-70.73c-2.88 0-4.07-1.31-3.58-3.94l2.59-18.48c.25-2.38 1.56-3.57 3.94-3.57H954.9c1.06 0 2.05.49 2.95 1.48a3.8 3.8 0 0 1 1.11 3.2Z"/>
+  <path fill="#96BAFF" d="m324.65 119.04-12.7 87.97c-.9 6.08.83 9.03 5.18 8.87 2.88 0 4.07 1.69 3.58 5.05l-1.85 11.34c-.41 2.46-2.1 4.43-5.06 5.91-2.87 1.48-6.57 2.22-11.09 2.22-7.8 0-13.35-2.1-16.63-6.28-3.2-4.2-4.52-9.74-3.95-16.64h-2.1c-2.95 6.98-7.88 12.65-14.78 17-6.9 4.36-15.08 6.53-24.53 6.53-13.63 0-24.23-4.8-31.8-14.41-7.55-9.61-10.14-22.67-7.75-39.18l9.73-68.87c.25-2.38 1.6-3.57 4.07-3.57H239c2.71 0 3.9 1.35 3.57 4.06l-9.12 64.8c-1.31 9.62.04 16.64 4.07 21.08 4.03 4.43 9.32 6.65 15.9 6.65 12 0 21.73-6.94 29.2-20.82l10.48-72.7c.25-2.05 1.69-3.07 4.31-3.07h23.79c2.55 0 3.7 1.35 3.45 4.06ZM814.77 87.75c-.33 2.38-1.68 3.57-4.06 3.57h-43.38l-16.64 118.03h43c2.72 0 3.87 1.36 3.46 4.07l-3.08 21.68c-.33 2.38-1.65 3.57-3.95 3.57H670.58c-2.7 0-3.86-1.35-3.45-4.06l3.08-21.69c.33-2.38 1.69-3.57 4.07-3.57h43.5L734.3 91.32h-43.01c-2.71 0-3.87-1.35-3.45-4.06l3.08-21.69c.33-2.38 1.64-3.57 3.94-3.57H814.4c2.71 0 3.86 1.36 3.45 4.07l-3.08 21.68Z"/>
+  <path fill="#7DEDFF" d="M191.43 62c1.56 0 2.55.5 2.96 1.48.49.9.28 1.97-.62 3.2l-79.49 104.1-9.12 64.32c-.33 2.38-1.68 3.57-4.06 3.57H75.58c-2.7 0-3.82-1.35-3.32-4.06l9.12-65.05L31.46 66.44c-.57-1.32-.61-2.39-.12-3.2.5-.83 1.44-1.24 2.84-1.24h28.71c2.14 0 3.62.94 4.44 2.83l34.5 72.57 56.08-73.06a5.95 5.95 0 0 1 4.68-2.34h28.84ZM638.3 119.04l-12.7 87.97c-.82 6.08.86 9.03 5.05 8.87 2.96 0 4.2 1.69 3.7 5.05l-1.97 11.34c-.41 2.46-2.1 4.43-5.05 5.91-2.88 1.48-6.54 2.22-10.97 2.22-5.43 0-9.53-1.73-12.33-5.18-2.79-3.53-4.27-8.13-4.43-13.8h-1.85c-3.37 5.84-8.42 10.72-15.16 14.67-6.66 3.94-14.58 5.91-23.79 5.91-15.52 0-28.34-5.13-38.45-15.4-10.1-10.35-15.15-24.56-15.15-42.63a79.46 79.46 0 0 1 5.17-28.83c3.45-8.95 8.05-16.55 13.8-22.8a63.27 63.27 0 0 1 20.59-14.65 59.63 59.63 0 0 1 24.89-5.42c8.54 0 15.94 1.68 22.18 5.05 6.33 3.37 10.89 7.76 13.68 13.18h2.1l3.94-12.44c.58-2.06 2.01-3.08 4.31-3.08h18.98c1.24 0 2.14.37 2.71 1.1.66.75.9 1.73.74 2.96Zm-73.21 93.51c10.6 0 19.18-3.98 25.76-11.95 6.57-7.96 9.86-17.33 9.86-28.09 0-10.26-2.8-17.94-8.38-23.04-5.5-5.17-12.45-7.76-20.83-7.76-10.1 0-18.57 3.66-25.39 10.97-6.82 7.23-10.23 16.96-10.23 29.2 0 10.02 2.71 17.66 8.14 22.91 5.42 5.18 12.44 7.76 21.07 7.76Z"/>
+  <g class="bokeh" mask="url(#yuraiz)">
+    <circle cx="95" cy="202" r="50" fill="#A73489"/>
+    <circle cx="232" cy="197" r="50" fill="#FAAD80"/>
+    <circle cx="532" cy="193" r="50" fill="#FF6767"/>
+    <circle cx="776" cy="97" r="50" fill="#FF3D68"/>
+    <circle cx="539" cy="153" r="35" fill="#A73489"/>
+    <circle cx="776" cy="217" r="35" fill="#FAAD80"/>
+    <circle cx="303" cy="183" r="35" fill="#FF6767"/>
+    <circle cx="219" cy="142" r="35" fill="#FF3D68"/>
+    <circle cx="567" cy="128" r="25" fill="#A73489"/>
+    <circle cx="592" cy="138" r="25" fill="#FAAD80"/>
+    <circle cx="524" cy="117" r="25" fill="#FF6767"/>
+    <circle cx="751" cy="193" r="25" fill="#FF3D68"/>
+    <circle cx="589" cy="187" r="50" fill="#A73489"/>
+    <circle cx="920" cy="131" r="50" fill="#FAAD80"/>
+    <circle cx="91" cy="127" r="50" fill="#FF6767"/>
+    <circle cx="476" cy="147" r="50" fill="#FF3D68"/>
+    <circle cx="65" cy="81" r="35" fill="#A73489"/>
+    <circle cx="133" cy="123" r="35" fill="#FAAD80"/>
+    <circle cx="397" cy="127" r="35" fill="#FF6767"/>
+    <circle cx="170" cy="83" r="35" fill="#FF3D68"/>
+    <circle cx="549" cy="158" r="25" fill="#A73489"/>
+    <circle cx="620" cy="221" r="25" fill="#FAAD80"/>
+    <circle cx="724" cy="87" r="25" fill="#FF6767"/>
+    <circle cx="307" cy="133" r="25" fill="#FF3D68"/>
+    <circle cx="390" cy="152" r="50" fill="#FAAD80"/>
+    <circle cx="717" cy="213" r="50" fill="#A73489"/>
+    <circle cx="885" cy="212" r="50" fill="#FF6767"/>
+    <circle cx="388" cy="213" r="50" fill="#FF3D68"/>
+    <circle cx="303" cy="213" r="35" fill="#A73489"/>
+    <circle cx="741" cy="151" r="35" fill="#FAAD80"/>
+    <circle cx="717" cy="77" r="35" fill="#FF6767"/>
+    <circle cx="100" cy="183" r="35" fill="#FF3D68"/>
+  </g>
 </svg>
